@@ -20,37 +20,41 @@ public class hw01 {
 		// TODO Auto-generated method stub
 		Scanner scn = new Scanner(System.in);
 		ArrayList <String> Level = new ArrayList<String>();
+		System.out.print("請問要輸入幾位學生的成績:");
 		int n = scn.nextInt();
 		boolean check = true;
 		int listen = 0 , study = 0, speak = 0, a ,sum;
 		for(int i = 0 ; i < n ; i++){
 			while(check){
+				System.out.print("請輸入第"+(i+1)+"位同學的聽力成績:");
 				a = scn.nextInt();
 				if(a >= 0 && a <= 100){
 					listen = a;
 					check = false;
 				}else{
-					System.out.print("輸入了一個無效數字，請重新輸入一次聽力成績:");
+					System.out.println("您輸入了一個無效數字，請重新輸入一次聽力成績!");
 				}
 			}
 			check = true;
 			while(check){
+				System.out.print("請輸入第"+(i+1)+"位同學的閱讀成績:");
 				a = scn.nextInt();
 				if(a >= 0 && a <= 100){
 					study = a;
 					check = false;
 				}else{
-					System.out.print("輸入了一個無效數字，請重新輸入一次閱讀成績:");
+					System.out.println("您輸入了一個無效數字，請重新輸入一次閱讀成績!");
 				}
 			}
 			check = true;
 			while(check){
+				System.out.print("請輸入第"+(i+1)+"位同學的口試成績:");
 				a = scn.nextInt();
 				if(a >= 0 && a <= 100){
 					speak = a;
 					check = false;
 				}else{
-					System.out.print("輸入了一個無效數字，請重新輸入一次口試成績:");
+					System.out.println("您輸入了一個無效數字，請重新輸入一次口試成績!");
 				}
 			}
 			check = true;
@@ -71,7 +75,7 @@ public class hw01 {
 			}
 		}
 		for(int i = 0 ; i < n ; i++){
-			System.out.println(Level.get(i));
+			System.out.println("第" + (i + 1) + "位同學" + Level.get(i));
 		}
 
 	}

@@ -16,11 +16,11 @@ public class ex01 {
 		// TODO Auto-generated method stub
 		Scanner scn = new Scanner(System.in);
 		int ISBN[][] = new int [3][10];
-		System.out.print("請輸入一串ISBN碼(不需空格):");
-		String str = scn.next();
-		if(str.length() == 10){
+		System.out.print("請輸入一串ISBN碼:");
+//		String str = scn.next();
+//		if(str.length() == 10){
 			for(int i = 0 ; i < 10 ; i++){
-				char a = str.charAt(i);
+				char a = scn.next().charAt(0);
 				ISBN[0][i] = fun(a);
 			}
 			ISBN[1][0] = ISBN[0][0];
@@ -35,9 +35,9 @@ public class ex01 {
 			}else{
 				System.out.print("此ISBN碼為違法的(ˋ^ˊ)");
 			}
-		}else{
-			System.out.print("請再輸入一次ISBN碼!!");
-		}
+//		}else{
+//			System.out.print("請再輸入一次ISBN碼!!");
+//		}
 
 	}
 	public static int fun(char a){

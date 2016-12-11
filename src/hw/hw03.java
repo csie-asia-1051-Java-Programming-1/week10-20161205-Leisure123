@@ -7,11 +7,20 @@ package hw;
  * Date: 2016/12/05
  * Author: 105021011 ¤B²Ð­è
  */
-
+import java.util.Scanner;
+import java.util.ArrayList;
 public class hw03 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		ArrayList <Student2> studList = new ArrayList <Student2>();
+		Scanner scn = new Scanner(System.in);
+		float c = 0 , e = 0 , m = 0;
+		boolean check = true;
+		while(check){
+			boolean con = true;
+			
+		}
 
 	}
 
